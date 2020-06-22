@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from "../components/layout/layout"
 import SEO from "../components/elements/seo"
 import Title from "../components/elements/title"
-import BlogRoll from '../components/blogroll/BlogRoll'
+import BlogrRoll from '../components/blogroll/blogroll'
 
 export default class BlogIndexPage extends React.Component {
   render() {
