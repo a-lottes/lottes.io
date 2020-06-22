@@ -49,7 +49,7 @@ class Blogroll extends React.Component {
   }
 }
 
-BlogRoll.propTypes = {
+Blogroll.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
