@@ -8,7 +8,7 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
     return graphql(
       `
         {
-          allMdx(
+          markdownRemark(
             sort: { fields: [frontmatter___date], order: DESC }
             limit: 1000
           ) {
@@ -31,7 +31,7 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
       }
   
       // Create blog posts pages.
-      const posts = result.data.allMdx.edges
+      const posts = result.data.markdownRemark.edges
   
       posts.forEach((post, index) => {
         const previous = index === posts.length - 1 ? null : posts[index + 1].node
