@@ -17,16 +17,16 @@ class Footer extends React.Component {
           <div className={'footer-center'}>
             <span className={'footer-title'}>Documentation</span>
             <nav>
-              <Link to="/markdown-page/" activeClassName={'active'}>Markdown Page</Link>
+              <Link to="/blog/" activeClassName={'active'}>Markdown Page</Link>
               <Link to="/javascript-page/" activeClassName={'active'}>JavaScript Page</Link>
               <Link to="/team/" activeClassName={'active'}>Team</Link>
               <Link to="/typescript-page/" activeClassName={'active'}>TypeScript Page</Link>
             </nav>
           </div>
           <div className={'footer-right'}>
-            <span className={'footer-title'}>Example</span>
+            <span className={'footer-title'}>Content</span>
             <nav>
-              <Link to="/markdown-page/" activeClassName={'active'}>Markdown Page</Link>
+              <Link to="/blog/" activeClassName={'active'}>Blog</Link>
               <Link to="/javascript-page/" activeClassName={'active'}>JavaScript Page</Link>
               <Link to="/csv-data-page/" activeClassName={'active'}>CSV Data</Link>
               <Link to="/typescript-page/" activeClassName={'active'}>TypeScript Page</Link>
