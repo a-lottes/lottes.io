@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from "../components/layout/layout"
 import SEO from "../components/elements/seo"
 import Title from "../components/elements/title"
-import BlogrRoll from '../components/blogroll/blogroll'
+import Blogroll from '../components/blogroll/blogroll'
 
 export default class BlogIndexPage extends React.Component {
   render() {
@@ -13,7 +13,7 @@ export default class BlogIndexPage extends React.Component {
         <section className="fw-area">
           <div className="container">
             <main>
-              <BlogRoll />
+              <Blogroll />
             </main>
           </div>
         </section>

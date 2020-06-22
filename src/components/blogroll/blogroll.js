@@ -4,7 +4,7 @@ import { Link, graphql, StaticQuery } from 'gatsby'
 
 import "./blogroll.scss"
 
-class BlogRoll extends React.Component {
+class Blogroll extends React.Component {
   render() {
     const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
@@ -78,6 +78,6 @@ export default () => (
         }
       }
     `}
-    render={(data, count) => <BlogRoll data={data} count={count} />}
+    render={(data, count) => <Blogroll data={data} count={count} />}
   />
 )
