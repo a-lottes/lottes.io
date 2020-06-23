@@ -16,12 +16,18 @@ export default function Template({
       <Title title={frontmatter.title} />
       <div className="container">
         <main>
-          <small>{frontmatter.date}</small>
+        <article>
           <p
             className="blog-post-content"
             dangerouslySetInnerHTML={{ __html: html }}
           />
-          <Link to="/">Go back to the homepage</Link>
+          <Link className="btn-highlight" to="/blog/">
+            Go back to posts
+                  </Link>
+          <span className="subtitle is-block post-date">
+            posted at {frontmatter.date}
+          </span>
+        </article>
         </main>
       </div>
     </Layout>

@@ -1,5 +1,16 @@
 article{
+    font-size: .85rem;
+    &.blog-list-item{
+    }
     header{
         background: none !important;
     }
+    .post-preview{
+        color: #9a9294
+    }
+
+.post-date{
+    margin-left: 2rem;
+    font-size: 0.85em;
+}
 }

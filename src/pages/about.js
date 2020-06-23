@@ -5,7 +5,7 @@ import Layout from "../components/layout/layout"
 import SEO from "../components/elements/seo"
 import Title from "../components/elements/title"
 
-const SecondPage = () => (
+const About = () => (
   <Layout>
     <SEO title="JavaScript Page" />
     <Title title="JavaScript Page Example" />
@@ -19,4 +19,4 @@ const SecondPage = () => (
   </Layout>
 )
 
-export default SecondPage
+export default About

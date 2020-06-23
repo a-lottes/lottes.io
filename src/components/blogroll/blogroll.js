@@ -17,7 +17,7 @@ class Blogroll extends React.Component {
               <article
                 className={`blog-list-item tile is-child box notification ${
                   post.frontmatter.featuredpost ? 'is-featured' : ''
-                }`}
+                  }`}
               >
                 <header>
                   <p className="post-meta">
@@ -27,19 +27,18 @@ class Blogroll extends React.Component {
                     >
                       {post.frontmatter.title}
                     </Link>
-                    <span> &bull; </span>
-                    <span className="subtitle is-size-5 is-block">
-                      {post.frontmatter.date}
-                    </span>
                   </p>
                 </header>
-                <p>
+                <p className="post-preview">
                   {post.excerpt}
                   <br />
                   <br />
-                  <Link className="button" to={post.frontmatter.path}>
-                    Keep Reading →
+                  <Link className="btn-highlight" to={post.frontmatter.path}>
+                    Keep Reading
                   </Link>
+                  <span className="subtitle is-block post-date">
+                    posted at {post.frontmatter.date}
+                  </span>
                 </p>
               </article>
             </div>
@@ -66,7 +65,7 @@ export default () => (
         ) {
           edges {
             node {
-              excerpt(pruneLength: 400)
+              excerpt(pruneLength: 350)
               id
               frontmatter {
                 path

@@ -115,6 +115,7 @@ h1>a{
 }
 
 a {
+  color: #fc3565;
 	text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
@@ -662,6 +663,9 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
+.blog-post-content{
+  font-size: .85rem;
+}
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
@@ -671,7 +675,8 @@ pre tt:after {
 section{
 	width: 100%;
 	height: auto;
-  background: #2f303e;
+  background: #1f2633;
+  border-top: 1px solid #2c374a;
   h2{
     font-size: 18px;
     line-height: 2rem;
@@ -707,6 +712,21 @@ section{
   display: table;
   margin: 4em auto 0;
   padding: .5em 3em;
+  cursor: pointer;
+  background: #fc3565;
+  font-size: .8em;
+  color: white;
+  font-weight: 800;
+  border-radius: 25px;
+  &:hover{
+    background: darken(#fc3565, 10);
+  }
+  &:active{
+    box-shadow: inset 0 1px 0 rgba(0,0,0,.8);
+  }
+}
+.btn-highlight{
+  padding: 1em 3em;
   cursor: pointer;
   background: #fc3565;
   font-size: .8em;

@@ -13,6 +13,7 @@ export default class BlogIndexPage extends React.Component {
         <section className="fw-area">
           <div className="container">
             <main>
+              <h3>Developer Blog Posts by date</h3>
               <Blogroll />
             </main>
           </div>
