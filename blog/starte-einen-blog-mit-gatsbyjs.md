@@ -4,7 +4,7 @@ date: 2020-06-22T18:02:27.888Z
 title: My first blog build with gatsby-cms
 description: Andreas Lottes new frontend developer blog
 ---
-# Hello World,
+### Hello World,
 
 this is my first blog post in my new GatsbyJs blog.
 
