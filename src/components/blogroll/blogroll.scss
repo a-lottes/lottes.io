@@ -1,6 +1,8 @@
 article{
         font-size: .85rem;
     &.blog-list-item{
+        border-bottom: 1px solid #e2e2e2;
+        margin-bottom: 1rem;
     }
     header{
         background: none !important;

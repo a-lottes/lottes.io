@@ -31,10 +31,13 @@ exports.createPages = ({ actions, graphql }) => {
     }
 
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+      const id = node.id
       createPage({
         path: node.frontmatter.path,
         component: blogPostTemplate,
-        context: {},
+        context: {
+          id,
+        },
       });
     });
   });
