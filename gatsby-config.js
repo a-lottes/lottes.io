@@ -2,7 +2,7 @@ const { typeNameFromDir } = require("gatsby-transformer-csv")
 
 module.exports = {
   siteMetadata: {
-    title: `{ Lottes.io }`,
+    title: `{ Lottes.dev }`,
     description: ``,
     author: `@a-lottes`,
   },
