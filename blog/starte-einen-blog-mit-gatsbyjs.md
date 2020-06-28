@@ -1,7 +1,7 @@
 ---
 path: gatsby-cms-page
 date: 2020-06-22T18:02:27.888Z
-title: Start of a new Open Source Projekct
+title: Start a Open Source Project - GatsbyJs Starter Theme
 description: Development start of a Open Source Gatsby starter Pack
 ---
 ### Hi reader and developer,
