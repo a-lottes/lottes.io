@@ -2,9 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
 
-import "./blogroll.scss"
+import "./style.scss"
 
-class Blogroll extends React.Component {
+class News extends React.Component {
   render() {
     const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
@@ -27,21 +27,12 @@ class Blogroll extends React.Component {
                     >
                       {post.frontmatter.title}
                     </Link>
-                  </p>
-                </header>
-                <p className="post-preview">
-                  {post.excerpt}
-                  <br />
-                  <br />
-                  <Link className="btn-highlight" to={post.frontmatter.path}>
-                    Keep Reading
-                  </Link>
                   <span className="subtitle is-block post-date">
                     posted at {post.frontmatter.date}
                   </span>
-                </p>
+                  </p>
+                </header>
               </article>
-          <hr/>
             </div>
           ))}
       </div>
@@ -49,7 +40,7 @@ class Blogroll extends React.Component {
   }
 }
 
-Blogroll.propTypes = {
+News.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
@@ -60,13 +51,10 @@ Blogroll.propTypes = {
 export default () => (
   <StaticQuery
     query={graphql`
-      query BlogRollQuery {
-        allMarkdownRemark(
-          sort: { order: DESC, fields: [frontmatter___date] }
-        ) {
-          edges {
+    query NewsQuery {
+        allMarkdownRemark(limit: 5, sort: {order: DESC, fields: [frontmatter___date]}) {
+          edges  {
             node {
-              excerpt(pruneLength: 350)
               id
               frontmatter {
                 path
@@ -78,6 +66,6 @@ export default () => (
         }
       }
     `}
-    render={(data, count) => <Blogroll data={data} count={count} />}
+    render={(data, count) => <News data={data} count={count} />}
   />
 )

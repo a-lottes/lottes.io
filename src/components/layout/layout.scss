@@ -663,9 +663,7 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
-.blog-post-content{
-  font-size: .85rem;
-}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;

@@ -4,6 +4,7 @@ import { graphql, Link } from "gatsby"
 import Layout from "../components/layout/layout"
 import SEO from "../components/elements/seo"
 import Title from "../components/elements/title"
+import "./style.scss"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -16,11 +17,15 @@ export default function Template({
       <Title title={frontmatter.title} />
       <div className="container">
         <main>
+        <div className="underlay-text">
+            <span>{frontmatter.title}</span>
+        </div>
         <article>
           <p
             className="blog-post-content"
             dangerouslySetInnerHTML={{ __html: html }}
           />
+          <hr/>
           <Link className="btn-highlight" to="/blog/">
             Go back to posts
                   </Link>
