@@ -26,14 +26,16 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-webfonts`,
       options: {
-        fonts: [
+        fonts: {
+          google: [
           {
             family: `Varela Round`,
             variants: [`100`,`300`,`400`, `700`]
           }
         ],
+        }
       },
     },
     `gatsby-transformer-remark`,
