@@ -11,11 +11,11 @@ const About = () => (
     <Title title="about me" />
     <div className="container">
       <main>
-        <h2>Find out more about me</h2>
+        <h2>Profile</h2>
         <p>
-          Welcome to page!<br/>
-          My Name is Andreas Lottes, i am a working as project manager and front end developer. 
-
+        Disciplined and enthusiastic IT and solution manager, conversant with agil kanban and scrum methology. 
+Previous sales experience includes a degree as merchant for office communication. Commended on multiple occasions for superb customer service and communication skills.
+As leading UI/UX developer in many projcets a high quality design and user experience was the requirement of myself.
         </p>
         <Link to="/">Go back to the homepage</Link>
       </main>
