@@ -107,7 +107,7 @@ main{
 }
 
 h1>a{
-  color: #fc3565;
+  color: #32cbe5;
   text-decoration: none;
   font-size: 22px;
   line-height: 40px;
@@ -115,7 +115,7 @@ h1>a{
 }
 
 a {
-  color: #fc3565;
+  color: #026e80;
 	text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
@@ -710,14 +710,14 @@ section{
 .btn-highlight,
 .learn-more{
   cursor: pointer;
-  background: #fc3565;
+  background: #026e80;
   font-size: .8em;
   color: white;
   font-weight: 800;
   border-radius: 25px;
   &:hover{
-    background: darken(#fc3565, 10);
-    background-image: linear-gradient(100deg,#fc3565, #ef7a69);
+    background: darken(#026e80, 10);
+    background-image: linear-gradient(100deg,#026e80, #ef7a69);
   }
   &:active{
     box-shadow: inset 0 1px 0 rgba(0,0,0,.8);

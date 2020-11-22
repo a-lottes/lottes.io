@@ -23,7 +23,7 @@ class Blogroll extends React.Component {
                   <p className="post-meta">
                     <Link
                       className="title has-text-primary is-size-4"
-                      to={post.frontmatter.path}
+                      to={'../' + post.frontmatter.path}
                     >
                       {post.frontmatter.title}
                     </Link>
@@ -33,7 +33,7 @@ class Blogroll extends React.Component {
                   {post.excerpt}
                   <br />
                   <br />
-                  <Link className="btn-highlight" to={post.frontmatter.path}>
+                  <Link className="btn-highlight" to={'../' + post.frontmatter.path}>
                     Keep Reading
                   </Link>
                   <span className="subtitle is-block post-date">

@@ -17,6 +17,10 @@ const About = () => (
 Previous sales experience includes a degree as merchant for office communication. Commended on multiple occasions for superb customer service and communication skills.
 As leading UI/UX developer in many projcets a high quality design and user experience was the requirement of myself.
         </p>
+        <h3>Speaker</h3>
+        <p>
+          comming soon 
+        </p>
         <Link to="/">Go back to the homepage</Link>
       </main>
     </div>

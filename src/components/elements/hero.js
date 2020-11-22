@@ -7,8 +7,8 @@ function Hero() {
     <section className="clearfix">
 		<div className="container">
 			<div className="section-left">
-				<h1 className="section-title">Developer</h1>
-				<h5 className="section-tagline">This is my personal Developer Blog and Portfolio</h5>
+				<h1 className="section-title">I am developer and project manager</h1>
+				<h5 className="section-tagline">This is my personal blog and portfolio website.</h5>
 			</div>
 			<div className="section-right">
 			<Link to="/about/" className="learn-more">Learn more</Link>

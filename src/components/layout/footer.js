@@ -12,11 +12,12 @@ class Footer extends React.Component {
           <div className={'footer-left copyright'}>
             © {new Date().getFullYear()}, Built with
           {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a> by <a href="https://github.com/a-lottes/">a-lottes</a>
+           love and coffee by <a href="https://github.com/a-lottes/">a-lottes</a>
           </div>
           <div className={'footer-center'}>
             <span className={'footer-title'}>Informations</span>
             <nav>
+              comming soon
             </nav>
           </div>
           <div className={'footer-right'}>

@@ -13,17 +13,17 @@ const IndexPage = () => (
     <section className="fw-area">
       <div className="container">
         <main>
-          <h2>Hi people</h2>
+          <h2>Hi visitor</h2>
           <p>Welcome to my developer blog. On this page i will write about the development of my open source project as well as share my portfolio.</p>
-          <hr/>
-
-          <h4>Find here my latesed Blog-post:</h4>
-          <News />
-          <hr/>
           
           <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
             <Image />
           </div>
+          
+          <hr/>
+
+          <h4>Find here my latesed Blog-post:</h4>
+          <News />
         </main>
       </div>
     </section>
