@@ -3,7 +3,7 @@ import Img from "gatsby-image"
 import { graphql } from "gatsby"
 
 import Layout from "../components/layout/layout"
-import SEO from "../components/elements/seo"
+import Seo from "../components/elements/seo"
 import Title from "../components/elements/title"
 
 import "./team.scss"
@@ -17,7 +17,7 @@ class Team extends React.Component {
     }
     return (
       <Layout>
-        <SEO title="Gatsby Lottes Starter Team" />
+        <Seo title="Gatsby Lottes Starter Team" />
         <Title title="Team with CSV Data Example" />
         <div className="container">
           <main>

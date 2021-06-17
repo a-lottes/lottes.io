@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/layout/layout"
-import SEO from "../components/elements/seo"
+import Seo from "../components/elements/seo"
 import Title from "../components/elements/title"
 
 class ThirdPage extends React.Component {
@@ -12,7 +12,7 @@ class ThirdPage extends React.Component {
     console.log(this.props)
     return (
       <Layout>
-        <SEO title="Example with CSV Data" />
+        <Seo title="Example with CSV Data" />
         <Title title="CSV Data Example" />
         <div className="container">
           <main>

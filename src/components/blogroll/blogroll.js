@@ -1,14 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link, graphql, StaticQuery } from 'gatsby'
+import { Link } from 'gatsby'
+import { GetNews } from "../../hooks/get-news"
 
 import "./blogroll.scss"
+const { data } = GetNews();
 
 class Blogroll extends React.Component {
   render() {
-    const { data } = this.props;
-    const { edges: posts } = data.allMarkdownRemark;
-
+    const { edges: posts } = data.allMarkdownRemark; 
     return (
       <div className="columns is-multiline">
         {posts &&
@@ -57,27 +57,4 @@ Blogroll.propTypes = {
   }),
 };
 
-export default () => (
-  <StaticQuery
-    query={graphql`
-      query BlogRollQuery {
-        allMarkdownRemark(
-          sort: { order: DESC, fields: [frontmatter___date] }
-        ) {
-          edges {
-            node {
-              excerpt(pruneLength: 350)
-              id
-              frontmatter {
-                path
-                title
-                date(formatString: "MMMM DD, YYYY")
-              }
-            }
-          }
-        }
-      }
-    `}
-    render={(data, count) => <Blogroll data={data} count={count} />}
-  />
-)
+export default Blogroll

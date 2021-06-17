@@ -2,12 +2,12 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout/layout"
-import SEO from "../components/elements/seo"
+import Seo from "../components/elements/seo"
 import Title from "../components/elements/title"
 
 const About = () => (
   <Layout>
-    <SEO title="About Andreas Lottes" />
+    <Seo title="About Andreas Lottes" />
     <Title title="about me" />
     <div className="container">
       <main>

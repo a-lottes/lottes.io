@@ -2,13 +2,13 @@ import React from "react"
 
 import Layout from "../components/layout/layout"
 import Image from "../components/elements/image"
-import SEO from "../components/elements/seo"
+import Seo from "../components/elements/seo"
 import Hero from "../components/elements/hero"
 import News from "../components/news/news"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <Seo title="Home" />
     <Hero />
     <section className="fw-area">
       <div className="container">

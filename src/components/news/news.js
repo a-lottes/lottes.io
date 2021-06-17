@@ -1,14 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link, graphql, StaticQuery } from 'gatsby'
+import { Link } from 'gatsby'
+import { GetNews } from "../../hooks/get-news"
 
 import "./style.scss"
 
+const { data } = GetNews();
+
 class News extends React.Component {
   render() {
-    const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
-
     return (
       <div className="columns is-multiline">
         {posts &&
@@ -47,25 +48,4 @@ News.propTypes = {
     }),
   }),
 };
-
-export default () => (
-  <StaticQuery
-    query={graphql`
-    query NewsQuery {
-        allMarkdownRemark(limit: 5, sort: {order: DESC, fields: [frontmatter___date]}) {
-          edges  {
-            node {
-              id
-              frontmatter {
-                path
-                title
-                date(formatString: "MMMM DD, YYYY")
-              }
-            }
-          }
-        }
-      }
-    `}
-    render={(data, count) => <News data={data} count={count} />}
-  />
-)
+export default News
