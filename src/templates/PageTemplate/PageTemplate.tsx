@@ -39,9 +39,6 @@ export const query = graphql`
         title
         date
         description
-        socialImage {
-          publicURL
-        }
       }
     }
   }
@@ -54,15 +51,10 @@ export const Head: React.FC<Props> = ({ data }) => {
     frontmatter: {
       title: pageTitle,
       description: pageDescription = "",
-      socialImage,
     },
   } = data.markdownRemark;
   const description = pageDescription || subtitle;
-  if (socialImage && socialImage?.publicURL) {
-    const image = socialImage?.publicURL && url.concat(socialImage?.publicURL);
-  } else {
-    const image = false;
-  }
+  const image = '';
 
   return (
     <Meta
