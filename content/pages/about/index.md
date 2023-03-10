@@ -1,7 +1,7 @@
 ---
 title: "About me"
 template: "page"
-socialImage: "./notebook.jpg"
+socialImage: "./66276726.jpeg"
 ---
 
 **Hello, my name is Andreas**, and I am excited to share a bit about myself with you.
