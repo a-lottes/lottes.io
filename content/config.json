@@ -1,0 +1,47 @@
+{
+  "title": "Webseite from Andreas Lottes",
+  "url": "https://lottes.dev",
+  "subtitle": "",
+  "copyright": "© All rights reserved.",
+  "googleAnalyticsId": "",
+  "disqusShortname": "",
+  "postsLimit": 4,
+  "pathPrefix": "/",
+  "menu": [
+    {
+      "label": "Keynotes",
+      "path": "/"
+    },
+    {
+      "label": "About me",
+      "path": "/pages/about"
+    },
+    {
+      "label": "Contact me",
+      "path": "/pages/contacts"
+    }
+  ],
+  "author": {
+    "name": "Andreas Lottes",
+    "photo": "/photo.jpeg",
+    "bio": "Disciplined and enthusiastic teamlead and solution manager, conversant with agil kanban and scrum methology.",
+    "contacts": {
+      "rss": "",
+      "email": "",
+      "github": "",
+      "facebook": "",
+      "telegram": "",
+      "twitter": "a_Lottes",
+      "linkedin": "andreas-lottes",
+      "instagram": "andreas.lottes",
+      "mastodon": "",
+      "line": "",
+      "weibo": "",
+      "gitlab": "",
+      "medium": "",
+      "youtube": "",
+      "codepen": "",
+      "soundcloud": ""
+    }
+  }
+}
