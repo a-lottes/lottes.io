@@ -58,7 +58,11 @@ export const Head: React.FC<Props> = ({ data }) => {
     },
   } = data.markdownRemark;
   const description = pageDescription || subtitle;
-  const image = socialImage?.publicURL && url.concat(socialImage?.publicURL);
+  if (socialImage && socialImage?.publicURL) {
+    const image = socialImage?.publicURL && url.concat(socialImage?.publicURL);
+  } else {
+    const image = false;
+  }
 
   return (
     <Meta
