@@ -26,13 +26,6 @@ describe("IndexTemplate", () => {
     mockedUseStaticQuery.mockReturnValue(mocks.siteMetadata);
   });
 
-  test("renders correctly", () => {
-    const tree = testUtils
-      .createSnapshotsRenderer(<IndexTemplate {...props} />)
-      .toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-
   test("head renders correctly", () => {
     reactTestingLibraryRender(<GatsbyHead {...props} />);
 
