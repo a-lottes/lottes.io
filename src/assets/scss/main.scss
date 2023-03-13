@@ -4,3 +4,17 @@
 @import "themes";
 @import "mixins";
 @import "base";
+
+.back {
+    &:before {
+      background-image: linear-gradient(to bottom right,var(--color-page-background),var(--color-page-background2));
+      bottom: 0;
+      content: "";
+      left: 0;
+      opacity: .6;
+      position: absolute;
+      right: 0;
+      top: 0; 
+      z-index: -1;
+    }
+  }
