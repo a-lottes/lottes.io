@@ -25,7 +25,7 @@ const IndexTemplate: React.FC<Props> = ({ data, pageContext }: Props) => {
   const { edges } = data.allMarkdownRemark;
 
   return (
-    <Layout className="back">
+    <Layout>
       <Sidebar isIndex />
       <Page>
         <Feed edges={edges} />
