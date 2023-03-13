@@ -25,20 +25,18 @@ const IndexTemplate: React.FC<Props> = ({ data, pageContext }: Props) => {
   const { edges } = data.allMarkdownRemark;
 
   return (
-    <div className='back'>
-      <Layout>
-        <Sidebar isIndex />
-        <Page>
-          <Feed edges={edges} />
-          <Pagination
-            prevPagePath={prevPagePath}
-            nextPagePath={nextPagePath}
-            hasPrevPage={hasPrevPage}
-            hasNextPage={hasNextPage}
-          />
-        </Page>
-      </Layout>
-    </div>
+    <Layout className="back">
+      <Sidebar isIndex />
+      <Page>
+        <Feed edges={edges} />
+        <Pagination
+          prevPagePath={prevPagePath}
+          nextPagePath={nextPagePath}
+          hasPrevPage={hasPrevPage}
+          hasNextPage={hasNextPage}
+        />
+      </Page>
+    </Layout>
   );
 };
 
